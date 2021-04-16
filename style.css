@@ -92,7 +92,9 @@ header{
 .banner h1{
 color: #ffffff;
 font-size: 3.5rem;
-font-family: "Baloo  Tamma  2", serif;
+font-style: italic;
+font-weight: bold;
+font-family: "Baloo 2";
 font-weight: 200 ;
 text-shadow: 3rem, 4rem px rgba(0,0,0,0.4) ;
 line-height: 3.5rem;
@@ -102,9 +104,12 @@ animation: moveBanner 1s 0.5s forwards;
 }
 
 .banner p{
-    font-family: "Josefin  Slab", serif;
+    font-style:italic;
+		font-weight:bold;
+		
+		font-family: "Inconsolata";
     color: #fff;
-    font-size: 2rem;
+    font-size: 3rem;
     text-shadow: .2rem .2rem rgba(0,0,0.4);
     margin-bottom: 2rem;
     animation: moveBanner 1s 0.7s forwards;
@@ -113,7 +118,7 @@ animation: moveBanner 1s 0.5s forwards;
 }
 
 .banner button{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-family:"Baloo 2" ;
     color: #000;
     font-size: 1.2rem;
     text-transform: uppercase;
@@ -170,7 +175,10 @@ opacity: 1;
 }
 
 .menu-link{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+		font-weight: bold;
+		
+		font-family: "Baloo 2", serif;
     font-size: 2rem;
     color:darkblue;
     transition: color 1s;
