@@ -24,6 +24,33 @@ text-decoration: none;
     cursor: pointer;
 
 }
+.hamburguer span{
+    position: absolute;
+    left: 3rem;
+    height: 2rem;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkblue;
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    opacity: 0;
+}
+
+.hamburguer span::before{
+    content: "";
+    position: absolute;
+    border-right: .5rem solid darkblue;
+    border-top: .5rem solid transparent;
+    border-left: .5rem solid transparent;
+    border-bottom: .5rem solid transparent;
+    left: -1rem;
+}
+
+.show-menu .hamburguer:hover span{
+    opacity: 1 ;
+}
 
 .show-menu .hamburguer{
     right: 16rem;
@@ -34,10 +61,12 @@ text-decoration: none;
     background-color: white;
     height: .1rem;
     box-shadow: 0.1rem, 0.1rem 1px #000;
+    transition: transform 1s;
 
 }
 .show-menu #line1{
     transform: translate(.4rem, .6rem) rotate(45deg);
+    
 }
 .show-menu #line2{
     opacity: 0;
@@ -46,6 +75,7 @@ text-decoration: none;
 }
 .show-menu #line3{
     transform: translate(.4rem, -.5rem) rotate(-45deg);
+    
 }
 
 header{
@@ -132,7 +162,11 @@ animation: moveBanner 1s 0.5s forwards;
     cursor:pointer;
     opacity: 0;
     animation: moveBanner 1s 0.9 forwards;
+    transition: color 1s;
     
+}
+.banner button:hover{
+    color:darkgray;
 }
 
 @keyframes moveBanner{
