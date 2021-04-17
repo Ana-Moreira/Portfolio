@@ -32,7 +32,7 @@ text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: darkblue;
+    background-color: #272727;
     color:white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     opacity: 0;
@@ -41,7 +41,7 @@ text-decoration: none;
 .hamburguer span::before{
     content: "";
     position: absolute;
-    border-right: .5rem solid darkblue;
+    border-right: .5rem solid #272727;;
     border-top: .5rem solid transparent;
     border-left: .5rem solid transparent;
     border-bottom: .5rem solid transparent;
@@ -209,12 +209,12 @@ opacity: 1;
 }
 
 .menu-link{
-    font-style: italic;
+    
 		font-weight: bold;
 		
 		font-family: "Baloo 2", serif;
     font-size: 2rem;
-    color:darkblue;
+    color: #272727;
     transition: color 1s;
 }
 
@@ -228,7 +228,8 @@ opacity: 1;
     
     position: absolute;
     bottom: 2rem;
-    width: 100%;
+    width: 50%;
+    height: 5%;
     display: flex;
     justify-content: space-evenly;
 
@@ -236,8 +237,8 @@ opacity: 1;
 
 .social-media i{
     
-    color:darkblue;
-    height: 2.5rem;
+    color:#272727;
+    height: 2rem;
     width: 2rem;
     font-size: 2rem;
     display: flex;
@@ -539,9 +540,7 @@ opacity: 1;
   .sessao-orcamento{
     width: 100%;
     height: 100vh;
-    background: url("./imagens/orcamento.jpg") no-repeat ;
-    background-repeat: no-repeat;
-    background-size: 1950px 1000px;
+    background-color: #272727;
     background-attachment:scroll;
     object-fit: cover;
     display: flex;
@@ -566,7 +565,7 @@ opacity: 1;
     background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2); 
     background: linear-gradient(to left, #2F80ED, #56CCF2); 
     padding: 0 3rem;
-    color: #fff;
+    color:black;
     font-family: var(--font-primary);
     font-size: 3rem;
     font-weight: lighter;
@@ -607,7 +606,7 @@ opacity: 1;
   footer{
     width: 100%;
     height: 7rem;
-    background-color: #17181b;
+    background: #4b4b4b; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -621,18 +620,22 @@ opacity: 1;
   
   .footer-content p{
     font-family: var(--font-secundary);
-    color: #a7a7a7;
+    color:black;
+    color: -webkit-linear-gradient(to right, #2F80ED, #56CCF2); 
+   color: linear-gradient(to left, #2F80ED, #56CCF2); 
     font-size: 1.2rem;
   }
   
   .social-list a{
     margin: 0 2rem;
-    color: #a7a7a7;
+    color: black;
     font-size: 1.3rem;
+    width: 100%;
   }
   
   .social-list ul {
     display: flex;
+    
   }
   
   #link-topo{
@@ -644,10 +647,11 @@ opacity: 1;
     background: #56CCF2;
     background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2); 
     background: linear-gradient(to left, #2F80ED, #56CCF2); 
+     
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: white;
     border-radius: .3rem;
     box-shadow:  0 0.1rem 0.6rem #00000009;
   }
