@@ -12,94 +12,38 @@ box-sizing: border-box;
 
 
 
-.hamburguer{
-    /*background-color: crimson;*/
-    width: 2rem;
-    height: 2rem;
-    position: fixed;
-    z-index: 100;
-    right: 2rem;
-    top: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content:space-evenly;
-    cursor: pointer;
 
-}
-.hamburguer span{
-    position: absolute;
-    left: 3rem;
-    height: 2rem;
-    width: 6rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #272727;
-    color:white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    opacity: 0;
-}
 
-.hamburguer span::before{
-    content: "";
-    position: absolute;
-    border-right: .5rem solid #272727;;
-    border-top: .5rem solid transparent;
-    border-left: .5rem solid transparent;
-    border-bottom: .5rem solid transparent;
-    left: -1rem;
-}
 
-.show-menu .hamburguer:hover span{
-    opacity: 1 ;
-}
 
-.show-menu .hamburguer{
-    right: 16rem;
-}
 
-.line{
-    width: 100%;
-    background-color: white;
-    height: .1rem;
-    box-shadow: 0.1rem, 0.1rem 1px #000;
-    transition: transform 1s;
 
-}
-.show-menu #line1{
-    transform: translate(.4rem, .6rem) rotate(45deg);
-    
-}
-.show-menu #line2{
-    opacity: 0;
-    visibility: hidden;
 
-}
-.show-menu #line3{
-    transform: translate(.4rem, -.5rem) rotate(-45deg);
-    
-}
 
 header{
     width: 100%;
-    height: 95vh;
+    height: 100vh;
     overflow: hidden;
     position: relative;
 }
 
 .img-wrapper{
     width: 100%;
-    height: 90%;
+    height: 100%;
     overflow: hidden;
-    background-color: rgba(0,0,0,0.8);
+    
 }
 
 .img-wrapper img{
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    align-items: center;
+    height: 60%;
     object-fit: cover;
-    opacity: 0.5;
+    opacity: 0.9;
     animation: zoom 25s ;
+    margin: 100px ;
+    
+    
 
 }
 
@@ -133,6 +77,7 @@ line-height: 3.5rem;
 margin-bottom: 2rem;
 opacity: 0;
 animation: moveBanner 1s 0.5s forwards;
+margin-left: 300px;
 }
 
 .banner p{
@@ -145,7 +90,7 @@ animation: moveBanner 1s 0.5s forwards;
     text-shadow: .2rem .2rem rgba(0,0,0.4);
     margin-bottom: 2rem;
     animation: moveBanner 1s 0.7s forwards;
-
+    margin-left: 300px;
 
 }
 
@@ -165,7 +110,7 @@ animation: moveBanner 1s 0.5s forwards;
     opacity: 0;
     animation: moveBanner 1s 0.9 forwards;
     transition: color 1s;
-    
+    margin-left: 300px;
 }
 .banner button:hover{
     color:darkgray;
@@ -181,79 +126,48 @@ opacity: 1;
 }
 }
 
-.sidebar{
-    width: 20rem;
-    height: 100vh;
-    background: #56CCF2;
+#secao {
+  background: #56CCF2;
     background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2); 
-    background: linear-gradient(to left, #2F80ED, #56CCF2); 
-    position: fixed;
-    top: 0;
-    right: -20rem;
-    transition: all 1s;
+    background: linear-gradient(to left, #2F80ED, #56CCF2);
+  height: 7vh;
+  font-size: 20px;
+  padding-top: 3vh;
 }
 
-.show-menu .sidebar{
-    right: 0;
-}
 
+.lista-menu {
+  display: inline;
+  margin-left:2vw;
+  color: #0f0e0e;
+
+}
 .menu{
-    position: absolute;
-    top:40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  width:100%;
+  height: 40px;
+ padding: 1px ;
+margin-top: 10px;
+background-color: black;
+ 
+ 
+}
+.menu ul{
+  list-style: none;
 
 }
-
-.menu-item{
-    text-align: center;
-    margin-bottom: .5rem;
+.menu ul li{
+  display: inline-block;
+  top: 0;
+  border-radius: 10px;
+}
+.menu ul li a{
+  text-decoration: none;
+  color: #00b8d4;
+  font-weight: lighter ;
+  padding: 0 20px;
+ 
 }
 
-.menu-link{
-    
-		font-weight: bold;
-		
-		font-family: "Baloo 2", serif;
-    font-size: 2rem;
-    color: #272727;
-    transition: color 1s;
-}
-
-.menu-link:hover{
-    color:darkgray;
-    
-
-}
-
-.social-media{
-    
-    position: absolute;
-    bottom: 2rem;
-    width: 50%;
-    height: 5%;
-    display: flex;
-    justify-content: space-evenly;
-
-}
-
-.social-media i{
-    
-    color:#272727;
-    height: 2rem;
-    width: 2rem;
-    font-size: 2rem;
-    display: flex;
-    justify-content: right;
-    align-items: right;
-    border-radius: 20%;
-    transition: background-color 1s;
-   
-}
-
-.social-media i:hover{
-    background-color: darkgray;
-}
 
 
 .conhecimentos {
@@ -303,6 +217,7 @@ opacity: 1;
     display: flex;
     align-items: center;
     justify-content: center;
+  
   }
   
   .sessao-header h1 {
@@ -310,7 +225,7 @@ opacity: 1;
     font-size: 3rem;
     color: #4b4b4b;
     border-bottom: solid 3px #2F80ED;
-    margin-bottom: 10rem;
+    margin-bottom: 8rem;
   }
   
   .conhecimento-header {
@@ -338,19 +253,21 @@ opacity: 1;
     grid-column: 7 / 11;
     grid-row: 2 / 6;
     width: 100%;
-    height: 70%;
+    height: 90%;
+    margin-left: 40px;
   }
   
   .conhecimentos-img-wrapper img {
     object-fit: cover;
-    height: 65%;
-    border-radius: 10%;
+    height: 90%;
+    border-radius: 50%;
+   
   }
   
   .projetos {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 10rem;
+    margin-bottom: 13rem;
   }
   
   .card {
@@ -363,7 +280,7 @@ opacity: 1;
     width: 100%;
     height: 100%;
     background-color: #262626;
-    border-radius: 0.5rem;
+    border-radius: 0.7rem;
   }
   
   .card-img-wrapper img {
@@ -541,21 +458,7 @@ opacity: 1;
   
   
   
-  .sessao-orcamento h1{
-    position: absolute;
-    top: -2.5rem;
-    left: 2rem;
-    background: #56CCF2;
-    background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2); 
-    background: linear-gradient(to left, #2F80ED, #56CCF2); 
-    padding: 0 3rem;
-    color:black;
-    font-family: var(--font-primary);
-    font-size: 3rem;
-    font-weight: lighter;
-    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-  }
+ 
   
  
 
@@ -645,7 +548,7 @@ opacity: 1;
 }
 
 
-#secao-sobre {
+#sessao-sobre {
   background-color: #f1eaea;
   padding: 20vh;
   width:100%;
@@ -661,7 +564,7 @@ ul {
   width: 100%;
   
   height: 100%;
-  padding: 8vh;
+  padding: 15vh;
 }
 
 .sessao-sobre{
@@ -676,6 +579,40 @@ ul {
   color: #4b4b4b;
   border-bottom: solid 3px #2F80ED;
   margin-bottom: 1.5rem;
-  margin-top: -300px;
+  margin-top: -140px;
 }
 
+/*carrousel*/
+
+.carrosel{
+  
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 50px auto;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0,7);
+}
+
+.carrosel ul{
+  display: flex;
+  width: 1200px;
+  height: 500px;
+}
+
+.carrosel li{
+  position: relative;
+ animation: slide 15s infinite ease-out;
+}
+
+@keyframes slide{
+  0%{left: 0px;}
+  20%{left: 0px;}
+  30%{left: -500px;}
+  50%{left: -500px;}
+  60%{left: -1000px;}
+  90%{left: -1000px;}
+  100%{left: 0px;}
+ 
+
+}

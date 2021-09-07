@@ -15,40 +15,35 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="hamburguer">
-      <div class="line" id="line1"></div>
-      <div class="line" id="line2"></div>
-      <div class="line" id="line3"></div>
-      <span>fechar</span>
-    </div>
-
+  
 
     <header id="home">
+      <div id="secao">
+    
+       
+        <a class="lista-menu" href="#sobre" class="menu-link">Sobre Mim</a>
+        <a class="lista-menu" href="#conhecimentos" class="menu-link">Conhecimentos</a>
+        <a class="lista-menu" href="#projetos" class="menu-link">Projetos</a>
+        <a class="lista-menu" href="#contato" class="menu-link">Contato</a>
+        <br>
+    
+    </div>
+      
       <div class="img-wrapper">
-       <img src="imagens/ap.jpg" alt="">
-      </div>
+        <img src="imagens/ap.jpg" alt="">
 
+        
+      </div>
+    
       <div class="banner">
         <h1>Desenvolvedora Front-End</h1>
         <p>Ana Paula Moreira</p>
         <button>Saiba Mais<a href="#conhecimentos"></a></button>
-        
+
       </div>
     </header>
 
-    <aside class="sidebar">
-      <nav>
-          <ul class="menu">
-              <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
-              <li class="menu-item"><a href="#conhecimentos" class="menu-link">Conhecimento</a></li>
-              <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
-              <li class="menu-item"><a href="#contato" class="menu-link">Contato</a></li>
-              <li class="menu-item"><a href="#orcamento" class="menu-link">Orçamento</a></li>
-            </ul>
-      </nav>
-      
-  </aside>
+    
 
     <main>
       <section class="sessao-sobre" id="sobre">
@@ -59,7 +54,7 @@
           <ul class="objetivos">
 
             <img class="imagem-base" src="./imagens/WhatsApp Image 2021-09-04 at 15.29.15.jpeg"
-              alt="Imagem de linguagens">
+              alt="Imagem">
           </ul>
           <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Magnam quod obcaecati voluptates explicabo commodi laudantium.
@@ -142,7 +137,7 @@
           </div>
         </div>
         <div class="conhecimentos-img-wrapper">
-          <img src="imagens/conhecimento.jpg" alt="imagem conhecimento">
+          <img src="imagens/conhecimento.jpg" alt="imagem conhecimento" width="350px" height="0px">
         </div>
       </div>
     </section>
@@ -152,7 +147,7 @@
       <h1>Projetos</h1>
     </div>
 
-    <div class="sessao-projetos" id="projetos">
+    <div class="sessao-projetos" id="projetos"></div>
 
 
       <div class="projetos">
@@ -165,7 +160,7 @@
             <h3>Javascript</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ducimus vero maxime amet magnam
               doloribus eos consequatur expedita architecto hic?</p>
-            <button class="btn">Saiba Mais</button>
+              <button>Saiba Mais<a href=""></a></button>
           </div>
         </div>
 
@@ -200,89 +195,78 @@
             <img src="imagens/projeto3.jpg" alt="imagem do projeto4" />
           </div>
           <div class="card-info">
-            <h2>Labefy</h2>
-            <h3>React</h3>
+            <h2>Codando do Zero</h2>
+            <h3>HTML5,CSS</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est pariatur soluta doloremque tempore nisi
               placeat, eveniet voluptate recusandae. Eius, sapiente?</p>
-            <button class="btn">Saiba Mais</button>
+              <a class="btn" href="https://wipsites.com.br"><button >Saiba Mais</button></a>
           </div>
         </div>
 
-        <div class="card">
-          <div class="card-img-wrapper">
-            <img src="imagens/projeto3.jpg" alt="imagem do projeto5" />
-          </div>
-          <div class="card-info">
-            <h2>Labefy</h2>
-            <h3>React</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est pariatur soluta doloremque tempore nisi
-              placeat, eveniet voluptate recusandae. Eius, sapiente?</p>
-            <button class="btn">Saiba Mais</button>
-          </div>
+       
         </div>
 
       </div>
 
-      </section>
+      
 
 
-      <section class="sessao-contato" id="contato">
+    <section class="sessao-contato" id="contato">
 
-        <div class="contato-wrapper">
+      <div class="contato-wrapper">
 
-          <div class="contato-left"></div>
-          <div class="contato-right">
+        <div class="contato-left"></div>
+        <div class="contato-right">
 
 
-            <h1>Contato</h1>
+          <h1>Contato</h1>
 
-            <form>
+          <form>
 
-              <div class="input-group">
-                <input type="text" class="field" id="nome">
-                <label for="nome" class="field-label">Nome</label>
-              </div>
-              <div class="input-group">
-                <input type="text" class="field" id="email">
-                <label for="email" class="field-label">E-mail</label>
-              </div>
-              <div class="input-group">
-                <textarea class="field" id="mensagem"></textarea>
-                <label for="mensagem" class="field-label">Mensagem</label>
-              </div>
-              <button type="submit" class="btn btn-submit">Enviar</button>
+            <div class="input-group">
+              <input type="text" class="field" id="nome">
+              <label for="nome" class="field-label">Nome</label>
+            </div>
+            <div class="input-group">
+              <input type="text" class="field" id="email">
+              <label for="email" class="field-label">E-mail</label>
+            </div>
+            <div class="input-group">
+              <textarea class="field" id="mensagem"></textarea>
+              <label for="mensagem" class="field-label">Mensagem</label>
+            </div>
+            <button type="submit" class="btn btn-submit">Enviar</button>
 
-            </form>
-          </div>
+          </form>
         </div>
-      </section>
+      </div>
+    </section>
 
 
 
-      <footer>
-        <div class="footer-content">
-          <p>
-            Copyright &copy; 2021, AP MOREIRA - Todos os diretos reservados
-          </p>
-        </div>
-        <div class="social-list">
+    <footer>
+      <div class="footer-content">
+        <p>
+          Copyright &copy; 2021, AP MOREIRA - Todos os diretos reservados
+        </p>
+      </div>
+      <div class="social-list">
 
-          <a href="www.Instagram.com/codandodozero"><img
-              src="https://img.icons8.com/fluent/60/000000/instagram-new.png" />
-            <a href="www.LinkedIn.com/company/codandodozero/"><img
-                src="https://img.icons8.com/color/60/000000/linkedin.png" />
+        <a href="https://www.instagram.com/aanapaula_moreira/"><img
+            src="https://img.icons8.com/fluent/60/000000/instagram-new.png" title="Contato ao Instagram" />
+          <a href="https://www.linkedin.com/in/ana-paula-moreira-820683191/"><img
+              src="https://img.icons8.com/color/60/000000/linkedin.png" title="Contato ao Linkedin" />
 
-              <a id="whatsapp" class="whatsapp-link" href="https://wa.me/message/YZLDT3TG3MWWO1" target="_blank">
-                <img src="./imagens/Whatsapp.png" alt="WhatsApp" width="60px" height="60px"
-                  title="Quero falar com o atendimento">
-              </a>
-        </div>
+            <a id="whatsapp" class="whatsapp-link" href="https://is.gd/lQSyGL" target="_blank">
+              <img src="./imagens/Whatsapp.png" alt="WhatsApp" width="60px" height="60px" title="Contato ao WhatsApp">
+            </a>
+      </div>
 
-      </footer>
-      <a href="#home" id="link-topo">
-        <i class="fas fa-arrow-up"></i>
-      </a>
-    </div>
+    </footer>
+    <a href="#home" id="link-topo">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+  </div>
 </body>
 
 <script src="script.js"></script>
