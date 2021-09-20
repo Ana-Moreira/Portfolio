@@ -31,6 +31,7 @@ header{
     width: 100%;
     height: 100%;
     overflow: hidden;
+    background-color: #f5f5f5;
     
 }
 
@@ -113,7 +114,7 @@ margin-left: 300px;
     margin-left: 300px;
 }
 .banner button:hover{
-    color:darkgray;
+    color:#4b4b4b;
 }
 
 @keyframes moveBanner{
@@ -226,7 +227,9 @@ background-color: black;
     color: #4b4b4b;
     border-bottom: solid 3px #2F80ED;
     margin-bottom: 8rem;
+    
   }
+  
   
   .conhecimento-header {
     display: flex;
@@ -275,7 +278,36 @@ background-color: black;
     height: 25rem;
     position: relative;
   }
+
+  .card button {
+    background: #56CCF2;
+    background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2); 
+    background: linear-gradient(to left, #2F80ED, #56CCF2); 
+    font-family: var(--font-action);
+    color: #eee;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
+    cursor:pointer;
+    opacity: 0;
+    animation: moveBanner 1s 0.9 forwards;
+    transition: color 1s;
+  }
   
+
+  .card button:hover{
+    color:#4b4b4b;
+}
+
+@keyframes moveBanner{
+  0%{
+ transform: translateY(10rem) rotateY(-3deg);
+}
+100%{
+transform: translateY(0) rotateY(0);
+opacity: 1;
+}
+}
   .card-img-wrapper {
     width: 100%;
     height: 100%;
@@ -579,7 +611,7 @@ ul {
   color: #4b4b4b;
   border-bottom: solid 3px #2F80ED;
   margin-bottom: 1.5rem;
-  margin-top: -140px;
+  margin-top: -380px;
 }
 
 /*carrousel*/
